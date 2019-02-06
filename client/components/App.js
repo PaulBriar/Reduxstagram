@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../actions/actionCreators';
 import Main from './Main';
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
         posts: state.posts,
         comments: state.comments,
     }
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return bindActionCreators(actionCreators, dispatch)
 };
 
