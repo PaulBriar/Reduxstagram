@@ -8,6 +8,7 @@ export const increment = (index) => {
 
 // add comment
 export const addComment = (postId, author, comment) => {
+    console.log('Dispatching comment')
     return {
         type: 'ADD_COMMENT',
         postId,
